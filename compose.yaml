@@ -1,0 +1,8 @@
+services:
+  web:
+    image: house-rental:local
+    build:
+      context: .
+      target: production
+    ports:
+      - "127.0.0.1:8080:80"
