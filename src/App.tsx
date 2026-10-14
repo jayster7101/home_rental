@@ -25,7 +25,7 @@ export default function App(){
     <a href="#main" className="skip">Skip to listing</a>
     <header><div className="wrap header"><a className="brand" href="#"><House size={23}/>{p.brand}<span>.</span></a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#photos">Photos</a><a href="#details">Details</a></nav><a className="button dark" href="#contact">Get in touch</a></div></header>
     <main id="main" className="wrap">
-      <motion.section className="intro" initial={reduced?false:{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{duration:.4}}><div><p className="eyebrow">ADU FOR RENT</p><h1>{p.headline}</h1><p className="location"><MapPin size={17}/>{p.address}</p></div><div className="price"><span>Monthly rent</span><strong>{p.rent}<small> / month</small></strong><span>{p.availability}</span></div></motion.section>
+      <motion.section className="intro" initial={reduced?false:{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{duration:.4}}><div><p className="eyebrow">HOME FOR RENT</p><h1>{p.headline}</h1><p className="location"><MapPin size={17}/>{p.location}</p></div><div className="price"><span>Monthly rent</span><strong>{p.rent}<small> / month</small></strong><span>{p.availability}</span></div></motion.section>
       <section className="hero" aria-label="Property photos">{p.photos.slice(0,3).map((photo,i)=><button key={photo.id} className={'photo-button '+(i===0?'main-photo':'')} onClick={()=>show(i)} aria-label={'View '+photo.label+' photo'}><Photo photo={photo} big={i===0}/></button>)}<button className="button gallery" onClick={()=>show(0)}><Images size={17}/>View all {p.photos.length} photos</button></section>
       <section className="facts" aria-label="Property at a glance">{facts.map(({Icon,value,label})=><div className="fact" key={label}><Icon size={25} strokeWidth={1.4}/><div><strong>{value}</strong><span>{label}</span></div></div>)}</section>
       <div className="body"><div className="content">
@@ -34,16 +34,16 @@ export default function App(){
         <section id="details"><p className="eyebrow">03 / THE DETAILS</p><h2>Make yourself at home.</h2><p className="description">{p.termsIntro}</p><dl>{p.terms.map(x=><div key={x.label}><dt>{x.label}</dt><dd>{x.value}</dd></div>)}</dl></section>
         <section><p className="eyebrow">04 / AROUND HERE</p><h2>The neighborhood.</h2><p className="description" style={{ whiteSpace: 'pre-line' }}>
   {p.neighborhood}
-</p><div className="location-box"><MapPin size={22}/><div><strong>{p.address}</strong></div></div></section>
+</p><div className="location-box"><MapPin size={22}/><div><strong>{p.location}</strong></div></div></section>
       </div><aside id="contact"><p className="eyebrow">YOUR NEXT CHAPTER</p><h2>See it for yourself.</h2><p className="description">{p.contactIntro}</p><div className="card-price"><span>Monthly rent</span><strong>{p.rent}<small> / month</small></strong></div>
         {p.email?<a
   className="button dark contact"
   href={`mailto:${p.email}?subject=${encodeURIComponent(
-    `Rental inquiry — ${p.address}`
+    `Modesto rental inquiry`
   )}&body=${encodeURIComponent(
     `Hello,
 
-I'm interested in the rental at ${p.address}.
+I'm interested in the rental in ${p.location}.
 
 CONTACT
 Full name:
@@ -51,8 +51,8 @@ Phone number:
 
 RENTAL PLANS
 Preferred move-in date:
-Desired lease length:
-Number of occupants (note, additional occupants may affect the monthly rent):
+Month-to-month rental:
+Number of occupants:
 Number of vehicles:
 
 I understand that pets are not permitted.
@@ -75,7 +75,7 @@ Thank you!`
         {p.phone?<a className="button contact" href={'tel:'+p.phone}><Phone size={17}/>{p.phone}</a>:<div className="pending"><Phone size={17}/>Phone coming soon</div>}
         <div className="owner"><House size={25}/><div><strong>{p.owner}</strong><span>Listed by the owner</span></div></div>
       </aside></div>
-    </main><footer><div className="wrap footer"><a className="brand" href="#">{p.brand}<span>.</span></a><span>ADU FOR RENT</span><span>© {new Date().getFullYear()} {p.brand}</span></div></footer>
+    </main><footer><div className="wrap footer"><a className="brand" href="#">{p.brand}<span>.</span></a><span>HOME FOR RENT</span><span>© {new Date().getFullYear()} {p.brand}</span></div></footer>
     <dialog ref={dialog} aria-labelledby="gallery-title" onClick={e=>{if(e.target===e.currentTarget)dialog.current?.close()}} onKeyDown={e=>{if(e.key==='ArrowLeft'){e.preventDefault();next(-1)}if(e.key==='ArrowRight'){e.preventDefault();next(1)}}}><div className="dialog-head"><h2 id="gallery-title">{p.photos[active].label} <small>{active+1} / {p.photos.length}</small></h2><button className="icon-button" aria-label="Close gallery" onClick={()=>dialog.current?.close()}><X/></button></div><Photo photo={p.photos[active]} big/><div className="dialog-controls"><button className="button" onClick={()=>next(-1)}><ChevronLeft size={18}/>Previous</button><button className="button" onClick={()=>next(1)}>Next<ChevronRight size={18}/></button></div></dialog>
   </>
 }

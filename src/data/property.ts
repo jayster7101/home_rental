@@ -1,14 +1,14 @@
 export const property = {
-  brand: 'The House', headline: 'A place to call home.', address: '3017 Nightingale Dr, Modesto, CA 95356',
-  rent: '$1575.00', bedrooms: '1', bathrooms: '1', area: '750', availability: 'Available now',
+  brand: 'Modesto Unit', headline: 'A place to call home.', location: 'Modesto, CA',
+  rent: '$1,500', bedrooms: '1', bathrooms: '1', area: '500', availability: 'Available now',
   description: 'An open living area connects to a kitchen with white cabinetry, a stainless steel refrigerator, and a range with a hood. Wood-look flooring and recessed lighting continue throughout the interior.',
   secondary: 'The bathroom features a walk-in shower, a floating vanity, and stacked laundry appliances. The bedroom includes mirrored closet doors, a ceiling fan, and a wall-mounted air-conditioning unit.',
   termsIntro: 'Contact the owner to confirm rental terms, availability, and what is included in the lease.',
-  contactIntro: 'The Owner is open to variable term durations (please note that the lease duration will affect the monthly rent). Please reach out to the Owner to discuss your rental needs and schedule a viewing.',
+  contactIntro: 'Available month-to-month for $1,500 per month. Contact the owner to schedule a viewing.',
   neighborhood: '• Prime Shopping & Dining Access: The property sits just minutes away from the Vintage Faire Mall and the bustling Sisk Road commercial corridor, providing highly convenient access to major retailers, grocery stores, and diverse dining options.\n• Excellent Commuter Convenience: It offers exceptionally fast access to Highway 99, making it an ideal spot for professionals commuting north toward Manteca and Stockton, or south into central Modesto.\n• Quiet, Established Neighborhood: Located in a mature, low-traffic residential pocket, the immediate area features peaceful, tree-lined streets with a classic suburban feel.\n• Strong Medical Proximity: The home is positioned close to major healthcare facilities, including the Kaiser Permanente Modesto Medical Center on Dale Road, which is a major convenience and employment hub.',
   highlights: ['Open living area & kitchen', 'Stainless steel kitchen appliances', 'Walk-in shower', 'State-of-the-art bidet toilet', 'Stacked washer & dryer', 'Mirrored bedroom closet', 'Ceiling fans', 'Wall-mounted air-conditioning unit',],
-  terms: ['Monthly rent', 'Security deposit', 'Lease duration', 'Move-in date', 'Pets', 'Utilities', 'Parking', 'Laundry'].map(label => ({label, value: ["$1575.00 (1-year lease assumed)", "$1575.00", "Variable term durations available", "To be announced", "No Pets", "Utilities bundled into rent", "On-street parking available", "Stacked washer & dryer included"][['Monthly rent', 'Security deposit', 'Lease duration', 'Move-in date', 'Pets', 'Utilities', 'Parking', 'Laundry'].indexOf(label)]})),
-  owner: 'Joe', email: '3017nightingaledr@gmail.com', phone: '',
+  terms: ['Monthly rent', 'Security deposit', 'Lease duration', 'Move-in date', 'Pets', 'Utilities', 'Parking', 'Laundry'].map(label => ({label, value: ["$1,500 per month", "$1,500", "Month-to-month", "To be announced", "No Pets", "Utilities bundled into rent", "On-street parking available", "Stacked washer & dryer included"][['Monthly rent', 'Security deposit', 'Lease duration', 'Move-in date', 'Pets', 'Utilities', 'Parking', 'Laundry'].indexOf(label)]})),
+  owner: 'Property owner', email: '', phone: '',
   // Asset names and room labels are mapped in PHOTO_INDEX.md.
   photos: [
     {
@@ -17,13 +17,6 @@ export const property = {
         "group": "Living & kitchen",
         "src": "/photos/2966E92B-4DE8-48AC-86A2-57E91ECB1D17_1_102_o.jpeg",
         "alt": "Open living area connected to white kitchen cabinets, stainless steel refrigerator, range, and hood"
-    },
-    {
-        "id": 1,
-        "label": "Bedroom — full view",
-        "group": "Bedroom",
-        "src": "/photos/1B04A171-3CB8-4B29-AF46-013328B6B779_1_102_o.jpeg",
-        "alt": "Bedroom with a bed, ceiling fan, wall-mounted air-conditioning unit, and mirrored closet doors"
     },
     {
         "id": 2,
@@ -82,25 +75,11 @@ export const property = {
         "alt": "Long view of the living area with doors along the wall and an open closet"
     },
     {
-        "id": 10,
-        "label": "Bedroom — accent wall & closet",
-        "group": "Bedroom",
-        "src": "/photos/BA50AF59-01EE-4258-9430-7DDC3ED82539_1_102_o.jpeg",
-        "alt": "Bedroom bed and wood accent wall beside mirrored sliding closet doors"
-    },
-    {
         "id": 11,
         "label": "Bedroom — bed & cooling unit",
         "group": "Bedroom",
         "src": "/photos/E5282E0E-76FB-468D-B5ED-A25CC7F94DC8_1_102_o.jpeg",
         "alt": "Bedroom with a bed, ceiling fan, wood accent wall, and wall-mounted cooling unit"
-    },
-    {
-        "id": 12,
-        "label": "Bedroom — mirrored closet",
-        "group": "Bedroom",
-        "src": "/photos/3CFC1E6D-43D0-409B-858E-AD6108359935_1_102_o.jpeg",
-        "alt": "Bedroom mirrored closet doors below the ceiling fan"
     },
     {
         "id": 13,

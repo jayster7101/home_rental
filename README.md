@@ -43,7 +43,7 @@ Push this folder to a new GitHub repository and import it into Vercel. `vercel.j
 Gallery supports click, previous/next, arrow keys, and Escape, with native dialog focus handling. Layout adapts to mobile screens and respects reduced motion.
 
 ## Included photos
-All 20 uploaded photos are included with descriptive room labels, alt text, and room filters. See `PHOTO_INDEX.md` for original filenames and room labels. Photos are included as supplied, without retouching. Rental price, address, dimensions, and room counts remain unset until confirmed.
+The property photos are included with descriptive room labels, alt text, and room filters. See `PHOTO_INDEX.md` for original filenames and room labels. Photos are included as supplied, without retouching. The listing shows 500 square feet, $1,500 per month, and month-to-month terms. Only the city is displayed. Photos containing a person in mirror reflections have been removed. The contact email is unset until the new account is created and confirmed.
 
 Photo assets now retain their original uploaded filenames. To upgrade a photo, replace its file in `public/photos/` with a higher-resolution copy using the same filename, or change its `src` in `src/data/property.ts`.
 # home_rental

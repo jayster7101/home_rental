@@ -5,7 +5,6 @@ Room names are based on visual inspection; no address or geographic coordinates 
 | Website label | Original filename | Website asset |
 |---|---|---|
 | Living area & kitchen | 2966E92B-4DE8-48AC-86A2-57E91ECB1D17_4_5005_c.jpeg | 2966E92B-4DE8-48AC-86A2-57E91ECB1D17_4_5005_c.jpeg |
-| Bedroom — full view | 1B04A171-3CB8-4B29-AF46-013328B6B779_4_5005_c.jpeg | 1B04A171-3CB8-4B29-AF46-013328B6B779_4_5005_c.jpeg |
 | Bathroom — vanity & entry | D558A262-918A-4C59-9571-6B05002C5EE0_1_102_o.jpeg | D558A262-918A-4C59-9571-6B05002C5EE0_1_102_o.jpeg |
 | Kitchen — wide view | 3DBD99ED-3E04-4669-80F0-25F541DD46A8_4_5005_c.jpeg | 3DBD99ED-3E04-4669-80F0-25F541DD46A8_4_5005_c.jpeg |
 | Kitchen — cabinets & counter | D35D5670-2884-41C8-86D7-58C7482FD4C8_4_5005_c.jpeg | D35D5670-2884-41C8-86D7-58C7482FD4C8_4_5005_c.jpeg |
@@ -14,9 +13,7 @@ Room names are based on visual inspection; no address or geographic coordinates 
 | Kitchen — range & hood | 086578EB-D2B9-4067-A45A-9DFBA7B0D838_4_5005_c.jpeg | 086578EB-D2B9-4067-A45A-9DFBA7B0D838_4_5005_c.jpeg |
 | Living area — toward bedroom | 529F6046-6CCD-4876-8FA4-BF83C354C5F6_4_5005_c.jpeg | 529F6046-6CCD-4876-8FA4-BF83C354C5F6_4_5005_c.jpeg |
 | Living area — doors & storage | 35BC158A-4130-4077-B698-FF5BD9DC7A61_4_5005_c.jpeg | 35BC158A-4130-4077-B698-FF5BD9DC7A61_4_5005_c.jpeg |
-| Bedroom — accent wall & closet | BA50AF59-01EE-4258-9430-7DDC3ED82539_4_5005_c.jpeg | BA50AF59-01EE-4258-9430-7DDC3ED82539_4_5005_c.jpeg |
 | Bedroom — bed & cooling unit | E5282E0E-76FB-468D-B5ED-A25CC7F94DC8_4_5005_c.jpeg | E5282E0E-76FB-468D-B5ED-A25CC7F94DC8_4_5005_c.jpeg |
-| Bedroom — mirrored closet | 3CFC1E6D-43D0-409B-858E-AD6108359935_4_5005_c.jpeg | 3CFC1E6D-43D0-409B-858E-AD6108359935_4_5005_c.jpeg |
 | Bathroom — toilet & towel rack | 341AF692-2DE7-44AD-8521-78E103AD1CAF_4_5005_c.jpeg | 341AF692-2DE7-44AD-8521-78E103AD1CAF_4_5005_c.jpeg |
 | Bathroom — shower & laundry | 4E5498D4-CD93-4BE9-A5A3-0982E6032827_4_5005_c.jpeg | 4E5498D4-CD93-4BE9-A5A3-0982E6032827_4_5005_c.jpeg |
 | Bathroom — shower close-up | BD0C7269-1B3A-4826-8AA7-3CCF692D22E2_4_5005_c.jpeg | BD0C7269-1B3A-4826-8AA7-3CCF692D22E2_4_5005_c.jpeg |
