@@ -71,8 +71,7 @@ Thank you!`
 >
   <Mail size={17} />
   Email the owner
-</a>:<div className="pending"><Mail size={17}/>Email coming soon</div>}
-        {p.phone?<a className="button contact" href={'tel:'+p.phone}><Phone size={17}/>{p.phone}</a>:<div className="pending"><Phone size={17}/>Phone coming soon</div>}
+</a>:<div className="pending"><Mail size={17}/>modesto-unit@gmail.com</div>}
         <div className="owner"><House size={25}/><div><strong>{p.owner}</strong><span>Listed by the owner</span></div></div>
       </aside></div>
     </main><footer><div className="wrap footer"><a className="brand" href="#">{p.brand}<span>.</span></a><span>HOME FOR RENT</span><span>© {new Date().getFullYear()} {p.brand}</span></div></footer>
